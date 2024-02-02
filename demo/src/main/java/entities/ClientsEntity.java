@@ -1,13 +1,13 @@
 package entities;
 
-public class Clients_entity {
+public class ClientsEntity {
 
     private String adresse;
     private String nom;
     private Integer code;
 
     // Constructeur avec paramètres
-    public Clients_entity(String adresse, String nom, Integer code) {
+    public ClientsEntity(String adresse, String nom, Integer code) {
         this.adresse = adresse;
         this.nom = nom;
         this.code = code;

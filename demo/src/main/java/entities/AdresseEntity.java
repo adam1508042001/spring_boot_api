@@ -1,6 +1,6 @@
 package entities;
 
-public class adresse_entity {
+public class AdresseEntity {
     private  String nom_ville;
     private String nom_rue;
     private  Integer numero;
@@ -9,7 +9,7 @@ public class adresse_entity {
 
 
 
-    public adresse_entity(String nom_ville,String nom_rue,Integer numero,Integer code_postal){
+    public AdresseEntity(String nom_ville, String nom_rue, Integer numero, Integer code_postal){
         this.nom_ville= nom_ville;
         this.nom_rue= nom_rue;
         this.code_postal= code_postal;

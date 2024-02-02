@@ -1,12 +1,12 @@
 package entities;
 
-public class Agences_entity {
+public class AgencesEntity {
     private String adresse;
     private String nom_agence;
     private Integer numero;
 
 
-    public Agences_entity(String adresse, String nom_agence, Integer numero) {
+    public AgencesEntity(String adresse, String nom_agence, Integer numero) {
         this.adresse = adresse;
         this.nom_agence = nom_agence;
         this.numero = numero;
