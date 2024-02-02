@@ -4,14 +4,14 @@ package entities;
 public class Produits_entity {
     private String reference;
     private String designation;
-    private Integer prix_semaine;
+    private Integer prix_loc_semaine;
 
 
     //creation d'un constructeur
-    public Produits_entity(String reference, String designation, Integer prix_semaine) {
+    public Produits_entity(String reference, String designation, Integer prix_loc_semaine) {
         this.reference = reference;
         this.designation = designation;
-        this.prix_semaine = prix_semaine;
+        this.prix_loc_semaine = prix_loc_semaine;
 
     }
 
@@ -21,12 +21,11 @@ public class Produits_entity {
     }
 
     public  String getDesignation() {
-
         return designation;
     }
 
-    public Integer getPrix_semaine() {
-        return prix_semaine;
+    public Integer getPrix_loc_semaine() {
+        return prix_loc_semaine;
     }
 
 
