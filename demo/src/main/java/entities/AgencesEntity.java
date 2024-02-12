@@ -10,7 +10,9 @@ public class AgencesEntity {
         this.adresse = adresse;
         this.nom_agence = nom_agence;
         this.numero = numero;
+
     }
+
 
     public String getAdresse() {
         return adresse;

@@ -1,28 +1,25 @@
 package entities;
 
-public class ClientsEntity {
+import lombok.Getter;
+import lombok.Setter;
 
-    private String adresse;
+public class ClientsEntity {
+    private Long id;
+    @Setter
+    @Getter
     private String nom;
-    private Integer code;
+    @Setter
+    @Getter
+    private String prenom;
+
 
     // Constructeur avec paramètres
-    public ClientsEntity(String adresse, String nom, Integer code) {
-        this.adresse = adresse;
+    public ClientsEntity(Long id, String nom, String prenom) {
+        this.id = id;
         this.nom = nom;
-        this.code = code;
+        this.prenom = prenom;
     }
 
-    // Méthodes get (accesseurs)
-    public String getAdresse() {
-        return adresse;
-    }
 
-    public String getNom() {
-        return nom;
-    }
 
-    public Integer getCode() {
-        return code;
-    }
 }

@@ -1,5 +1,6 @@
 package entities;
 
+
 public class AdresseEntity {
     private  String nom_ville;
     private String nom_rue;
