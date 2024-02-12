@@ -1,9 +1,16 @@
 package entities;
-
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
+
+@Entity
 public class ClientsEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Setter
     @Getter
@@ -13,13 +20,12 @@ public class ClientsEntity {
     private String prenom;
 
 
-    // Constructeur avec paramètres
-    public ClientsEntity(Long id, String nom, String prenom) {
+    //CONSTRUCTEUR
+    public ClientsEntity() {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
     }
-
 
 
 }
