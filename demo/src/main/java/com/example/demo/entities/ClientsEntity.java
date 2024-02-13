@@ -11,6 +11,7 @@ public class ClientsEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+
     @Setter
     @Getter
     private String nom;

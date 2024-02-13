@@ -28,8 +28,7 @@ public class ClientController {
 
 
     @GetMapping(value = "/id")
-    public @ResponseBody
-    Optional<ClientsEntity> getClientById(@PathVariable Long id) {
+    public @ResponseBody Optional<ClientsEntity> getClientById(@PathVariable Long id) {
         return clientService.findClientById(id);
     }
 
