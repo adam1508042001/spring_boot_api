@@ -1,4 +1,4 @@
-package entities;
+package com.example.demo.entities;
 
 //creation de la classe
 public class ProduitsEntity {

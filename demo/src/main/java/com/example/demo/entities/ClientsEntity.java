@@ -1,24 +1,23 @@
-package entities;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+package com.example.demo.entities;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 
 @Entity
+@Table(name = "clients")
 public class ClientsEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Setter
     @Getter
     private String nom;
+
     @Setter
     @Getter
     private String prenom;
-
 
     //CONSTRUCTEUR
     public ClientsEntity() {

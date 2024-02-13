@@ -1,22 +1,19 @@
-package controllers;
+package com.example.demo.controllers;
 
-import entities.ClientsEntity;
+import com.example.demo.entities.ClientsEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import service.ClientService;
+import com.example.demo.service.ClientService;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/clients")
 public class ClientController {
 
-    private final ClientService clientService;
-
     @Autowired
-    public ClientController(ClientService clientService) {
-        this.clientService = clientService;
-    }
+    private ClientService clientService;
+
 
    /* @PostMapping("/save")
     public void saveClient(@RequestBody ClientsEntity clientsEntity) {
@@ -24,10 +21,15 @@ public class ClientController {
     }*/
 
 
+    @GetMapping("/clients")
+    public @ResponseBody List<ClientsEntity> getAllClients() {
+        return clientService.getAllClients();
+    }
 
 
-    @GetMapping("/{id}")
-    public Optional<ClientsEntity> getClientById(@PathVariable Long id) {
+    @GetMapping(value = "/id")
+    public @ResponseBody
+    Optional<ClientsEntity> getClientById(@PathVariable Long id) {
         return clientService.findClientById(id);
     }
 

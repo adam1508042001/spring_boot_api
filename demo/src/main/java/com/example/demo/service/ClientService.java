@@ -1,24 +1,31 @@
-package service;
+package com.example.demo.service;
 
-import entities.ClientsEntity;
+import com.example.demo.entities.ClientsEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.ClientsRepository;
+import com.example.demo.repository.ClientsRepository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ClientService {
+public class ClientService implements IClientService {
 
     @Autowired
     private ClientsRepository clientsRepository;
+
+
 
    /* public void saveClient(ClientsEntity clientsEntity) {
         clientsRepository.save(clientsEntity);
     }*/
 
+
     public Optional<ClientsEntity> findClientById(Long id) {
         return clientsRepository.findById(id);
+    }
+    public List<ClientsEntity> getAllClients() {
+        return clientsRepository.findAll();
     }
 
     /*public void updateClient(ClientsEntity clientsEntity) {
