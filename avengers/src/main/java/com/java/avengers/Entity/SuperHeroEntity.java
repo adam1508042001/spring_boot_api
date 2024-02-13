@@ -1,4 +1,4 @@
-package Entity;
+package com.java.avengers.Entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
