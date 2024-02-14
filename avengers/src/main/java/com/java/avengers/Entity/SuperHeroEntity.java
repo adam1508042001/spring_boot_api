@@ -9,6 +9,8 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 
 //declaration de la classe super hero
 //mapping de la classe entity
@@ -60,6 +62,9 @@ public class SuperHeroEntity {
         this.numero_tel = numero_tel;
         this.id_adresse = id_adresse;
     }
+
+
+
 
 }
 
